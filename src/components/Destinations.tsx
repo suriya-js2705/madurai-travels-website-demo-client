@@ -1,55 +1,67 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Star } from "lucide-react";
+import { MapPin, Star, Clock, Users } from "lucide-react";
 
 interface DestinationsProps {
   onContactClick: () => void;
 }
 
 const Destinations = ({ onContactClick }: DestinationsProps) => {
-  const destinations = [
+  const packages = [
     {
-      name: "Goa",
-      image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      price: "From ₹8,999",
-      rating: 4.8,
-      description: "Golden beaches, vibrant nightlife, and Portuguese heritage"
-    },
-    {
-      name: "Kerala Backwaters", 
-      image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      price: "From ₹12,999",
-      rating: 4.9,
-      description: "Serene houseboats, lush greenery, and tranquil waterways"
-    },
-    {
-      name: "Rajasthan Heritage",
-      image: "https://images.unsplash.com/photo-1477587458883-47145ed94245?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80", 
-      price: "From ₹15,999",
-      rating: 4.7,
-      description: "Majestic palaces, desert safaris, and royal experiences"
-    },
-    {
-      name: "Himachal Pradesh",
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      price: "From ₹11,999", 
-      rating: 4.8,
-      description: "Snow-capped mountains, hill stations, and adventure sports"
-    },
-    {
-      name: "Tamil Nadu Temples",
+      name: "Meenakshi Temple Tour",
       image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      price: "From ₹9,999",
-      rating: 4.6, 
-      description: "Ancient temples, rich culture, and South Indian heritage"
+      price: "From ₹599",
+      duration: "3 Hours",
+      rating: 4.9,
+      group: "2-8 People",
+      description: "Visit the magnificent Meenakshi Amman Temple with expert local guide"
     },
     {
-      name: "Kashmir Valley",
-      image: "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      price: "From ₹18,999",
+      name: "Thirumalai Nayakkar Palace", 
+      image: "https://images.unsplash.com/photo-1477587458883-47145ed94245?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      price: "From ₹799",
+      duration: "2 Hours",
+      rating: 4.8,
+      group: "2-6 People",
+      description: "Explore the grand Indo-Saracenic architectural marvel and its history"
+    },
+    {
+      name: "Gandhi Memorial Museum",
+      image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      price: "From ₹499",
+      duration: "1.5 Hours", 
+      rating: 4.7,
+      group: "2-8 People",
+      description: "Learn about India's freedom struggle and Mahatma Gandhi's legacy"
+    },
+    {
+      name: "Full City Tour Package",
+      image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      price: "From ₹1,999",
+      duration: "8 Hours",
       rating: 4.9,
-      description: "Paradise on earth with stunning lakes and valleys"
+      group: "2-6 People",
+      description: "Complete Madurai sightseeing including temples, palace, markets & lunch"
+    },
+    {
+      name: "Car Rental - Half Day",
+      image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      price: "From ₹1,299",
+      duration: "4 Hours",
+      rating: 4.8,
+      group: "Self Drive",
+      description: "AC car rental with driver for flexible local exploration"
+    },
+    {
+      name: "Airport Transfer + City Tour",
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      price: "From ₹2,499",
+      duration: "6 Hours", 
+      rating: 4.9,
+      group: "2-6 People",
+      description: "Airport pickup with guided city tour before your onward journey"
     }
   ];
 
@@ -58,37 +70,47 @@ const Destinations = ({ onContactClick }: DestinationsProps) => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Discover Incredible India
+            Madurai Tour Packages & Rentals
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Explore the diverse beauty of India - from beaches to mountains, heritage to adventure
+            Perfect for travelers arriving at Madurai Railway Station or Airport - explore the temple city with ease
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {destinations.map((destination, index) => (
+          {packages.map((pkg, index) => (
             <Card key={index} className="group overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
               <div className="relative overflow-hidden">
                 <img 
-                  src={destination.image} 
-                  alt={destination.name}
+                  src={pkg.image} 
+                  alt={pkg.name}
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center">
                   <Star className="h-4 w-4 text-yellow-500 fill-current mr-1" />
-                  <span className="text-sm font-semibold">{destination.rating}</span>
+                  <span className="text-sm font-semibold">{pkg.rating}</span>
                 </div>
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center mb-2">
-                  <MapPin className="h-4 w-4 text-teal-500 mr-2" />
-                  <h3 className="text-xl font-semibold text-gray-900">{destination.name}</h3>
+                  <MapPin className="h-4 w-4 text-orange-500 mr-2" />
+                  <h3 className="text-xl font-semibold text-gray-900">{pkg.name}</h3>
                 </div>
-                <p className="text-gray-600 mb-4">{destination.description}</p>
+                <p className="text-gray-600 mb-4">{pkg.description}</p>
+                <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
+                  <div className="flex items-center">
+                    <Clock className="h-4 w-4 mr-1" />
+                    <span>{pkg.duration}</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Users className="h-4 w-4 mr-1" />
+                    <span>{pkg.group}</span>
+                  </div>
+                </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-teal-600">{destination.price}</span>
+                  <span className="text-2xl font-bold text-orange-600">{pkg.price}</span>
                   <Button 
-                    className="bg-teal-500 hover:bg-teal-600 text-white"
+                    className="bg-orange-500 hover:bg-orange-600 text-white"
                     onClick={onContactClick}
                   >
                     Book Now
@@ -97,6 +119,33 @@ const Destinations = ({ onContactClick }: DestinationsProps) => {
               </CardContent>
             </Card>
           ))}
+        </div>
+        
+        <div className="text-center mt-12">
+          <div className="bg-orange-50 rounded-lg p-8 max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Just Arrived in Madurai?</h3>
+            <p className="text-gray-600 mb-6">
+              Our representatives are available at Madurai Junction Railway Station and Madurai Airport 
+              for instant bookings and immediate service. No advance reservation needed!
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button 
+                size="lg"
+                className="bg-orange-500 hover:bg-orange-600 text-white"
+                onClick={onContactClick}
+              >
+                Call for Instant Pickup
+              </Button>
+              <Button 
+                size="lg"
+                variant="outline"
+                className="border-orange-500 text-orange-600 hover:bg-orange-50"
+                onClick={onContactClick}
+              >
+                WhatsApp Us Now
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
     </section>

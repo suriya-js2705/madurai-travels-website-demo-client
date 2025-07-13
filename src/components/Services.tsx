@@ -1,28 +1,28 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Plane, MapPin, Camera, Shield } from "lucide-react";
+import { Train, Car, MapPin, Clock } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: Plane,
-      title: "Domestic Flight Bookings",
-      description: "Best deals on flights across India with seamless booking and 24/7 support"
+      icon: Train,
+      title: "Railway Station Pickup",
+      description: "Instant pickup from Madurai Junction with comfortable AC vehicles for your local tours"
+    },
+    {
+      icon: Car,
+      title: "Car Rental Services", 
+      description: "Self-drive and chauffeur-driven cars available hourly, daily, or multi-day rentals"
     },
     {
       icon: MapPin,
-      title: "Custom India Tours", 
-      description: "Personalized itineraries showcasing India's diverse culture, heritage, and landscapes"
+      title: "Local Tour Packages",
+      description: "Curated Madurai sightseeing packages covering temples, palaces, and cultural sites"
     },
     {
-      icon: Camera,
-      title: "Local Expert Guides",
-      description: "Experienced local guides to show you authentic India beyond tourist spots"
-    },
-    {
-      icon: Shield,
-      title: "Travel Safety & Support",
-      description: "Comprehensive travel insurance and round-the-clock assistance throughout India"
+      icon: Clock,
+      title: "24/7 Travel Support",
+      description: "Round-the-clock assistance for travelers arriving at any time from station or airport"
     }
   ];
 
@@ -31,10 +31,10 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Why Choose Us for Indian Travel
+            Why Choose Madurai Local Travels
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Your trusted partner for exploring India's incredible diversity and rich heritage
+            Your trusted partner for exploring Madurai's rich heritage and culture from the moment you arrive
           </p>
         </div>
         
@@ -42,8 +42,8 @@ const Services = () => {
           {services.map((service, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-teal-500 transition-colors duration-300">
-                  <service.icon className="h-8 w-8 text-teal-600 group-hover:text-white transition-colors duration-300" />
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-orange-500 transition-colors duration-300">
+                  <service.icon className="h-8 w-8 text-orange-600 group-hover:text-white transition-colors duration-300" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">{service.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{service.description}</p>

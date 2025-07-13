@@ -41,10 +41,10 @@ const ContactSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Let's Plan Your Adventure
+            Ready to Explore Madurai?
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Ready to explore the world? Get in touch and let's create your perfect journey
+            Contact us for instant bookings, station pickups, and customized Madurai tour packages
           </p>
         </div>
         
@@ -52,44 +52,54 @@ const ContactSection = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold mb-6 text-teal-400">Get In Touch</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-orange-400">Get In Touch</h3>
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <MapPin className="h-6 w-6 text-teal-400 mr-4 mt-1 flex-shrink-0" />
+                  <MapPin className="h-6 w-6 text-orange-400 mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold mb-1">Visit Our Office</h4>
-                    <p className="text-gray-300">123 Travel Street, Adventure City, AC 12345</p>
+                    <p className="text-gray-300">Near Madurai Junction Railway Station<br />W Masi Street, Madurai, Tamil Nadu 625001</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Phone className="h-6 w-6 text-teal-400 mr-4 mt-1 flex-shrink-0" />
+                  <Phone className="h-6 w-6 text-orange-400 mr-4 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold mb-1">Call Us</h4>
-                    <p className="text-gray-300">+1 (555) 123-4567</p>
+                    <h4 className="font-semibold mb-1">Call for Instant Booking</h4>
+                    <p className="text-gray-300">+91 98765 43210<br />+91 87654 32109</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Mail className="h-6 w-6 text-teal-400 mr-4 mt-1 flex-shrink-0" />
+                  <Mail className="h-6 w-6 text-orange-400 mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold mb-1">Email Us</h4>
-                    <p className="text-gray-300">hello@yourtravelagency.com</p>
+                    <p className="text-gray-300">bookings@maduraitravels.com</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Clock className="h-6 w-6 text-teal-400 mr-4 mt-1 flex-shrink-0" />
+                  <Clock className="h-6 w-6 text-orange-400 mr-4 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold mb-1">Business Hours</h4>
-                    <p className="text-gray-300">Mon - Fri: 9AM - 6PM<br />Sat: 10AM - 4PM</p>
+                    <h4 className="font-semibold mb-1">Service Hours</h4>
+                    <p className="text-gray-300">24/7 Station & Airport Pickup<br />Office: 6AM - 10PM Daily</p>
                   </div>
                 </div>
               </div>
+            </div>
+            
+            <div className="bg-orange-900/30 rounded-lg p-6">
+              <h4 className="font-semibold mb-3 text-orange-400">Quick Service Locations</h4>
+              <ul className="text-gray-300 space-y-2">
+                <li>• Madurai Junction Railway Station</li>
+                <li>• Madurai Airport (IXM)</li>
+                <li>• Major Hotels in Madurai</li>
+                <li>• Bus Stands & Travel Hubs</li>
+              </ul>
             </div>
           </div>
 
           {/* Contact Form */}
           <Card className="bg-gray-800 border-gray-700">
             <CardHeader>
-              <CardTitle className="text-white">Send Us a Message</CardTitle>
+              <CardTitle className="text-white">Book Your Madurai Experience</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -103,7 +113,7 @@ const ContactSection = () => {
                       onChange={handleChange}
                       required
                       className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-400"
-                      placeholder="John Doe"
+                      placeholder="Your Name"
                     />
                   </div>
                   <div>
@@ -116,7 +126,7 @@ const ContactSection = () => {
                       onChange={handleChange}
                       required
                       className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-400"
-                      placeholder="john@example.com"
+                      placeholder="your@email.com"
                     />
                   </div>
                 </div>
@@ -129,23 +139,23 @@ const ContactSection = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-400"
-                      placeholder="+1 (555) 123-4567"
+                      placeholder="+91 98765 43210"
                     />
                   </div>
                   <div>
-                    <Label htmlFor="destination" className="text-white">Dream Destination</Label>
+                    <Label htmlFor="destination" className="text-white">Service Needed</Label>
                     <Input 
                       id="destination"
                       name="destination"
                       value={formData.destination}
                       onChange={handleChange}
                       className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-400"
-                      placeholder="e.g., Santorini, Greece"
+                      placeholder="City Tour, Car Rental, etc."
                     />
                   </div>
                 </div>
                 <div>
-                  <Label htmlFor="message" className="text-white">Message</Label>
+                  <Label htmlFor="message" className="text-white">Travel Details</Label>
                   <Textarea 
                     id="message"
                     name="message"
@@ -154,14 +164,14 @@ const ContactSection = () => {
                     rows={4}
                     required
                     className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-400"
-                    placeholder="Tell us about your dream trip..."
+                    placeholder="Arrival time, train/flight details, preferred pickup location..."
                   />
                 </div>
                 <Button 
                   type="submit" 
-                  className="w-full bg-teal-500 hover:bg-teal-600 text-white font-semibold py-3"
+                  className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3"
                 >
-                  Send Message
+                  Send Booking Request
                 </Button>
               </form>
             </CardContent>
