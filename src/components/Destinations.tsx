@@ -10,46 +10,46 @@ interface DestinationsProps {
 const Destinations = ({ onContactClick }: DestinationsProps) => {
   const destinations = [
     {
-      name: "Santorini, Greece",
-      image: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      price: "From $899",
-      rating: 4.9,
-      description: "Stunning sunsets and pristine white architecture"
-    },
-    {
-      name: "Bali, Indonesia", 
-      image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      price: "From $699",
+      name: "Goa",
+      image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      price: "From ₹8,999",
       rating: 4.8,
-      description: "Tropical paradise with rich culture and beautiful beaches"
+      description: "Golden beaches, vibrant nightlife, and Portuguese heritage"
     },
     {
-      name: "Tokyo, Japan",
-      image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80", 
-      price: "From $1299",
+      name: "Kerala Backwaters", 
+      image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      price: "From ₹12,999",
       rating: 4.9,
-      description: "Modern metropolis blending tradition with innovation"
+      description: "Serene houseboats, lush greenery, and tranquil waterways"
     },
     {
-      name: "Machu Picchu, Peru",
-      image: "https://images.unsplash.com/photo-1587595431973-160d0d94add1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      price: "From $1199", 
+      name: "Rajasthan Heritage",
+      image: "https://images.unsplash.com/photo-1477587458883-47145ed94245?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80", 
+      price: "From ₹15,999",
       rating: 4.7,
-      description: "Ancient Incan citadel high in the Andes Mountains"
+      description: "Majestic palaces, desert safaris, and royal experiences"
     },
     {
-      name: "Paris, France",
-      image: "https://images.unsplash.com/photo-1502602898536-47ad22581b52?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      price: "From $999",
-      rating: 4.8, 
-      description: "City of lights, romance, and world-class cuisine"
+      name: "Himachal Pradesh",
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      price: "From ₹11,999", 
+      rating: 4.8,
+      description: "Snow-capped mountains, hill stations, and adventure sports"
     },
     {
-      name: "Dubai, UAE",
-      image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      price: "From $799",
-      rating: 4.6,
-      description: "Luxury shopping, ultramodern architecture, and desert adventures"
+      name: "Tamil Nadu Temples",
+      image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      price: "From ₹9,999",
+      rating: 4.6, 
+      description: "Ancient temples, rich culture, and South Indian heritage"
+    },
+    {
+      name: "Kashmir Valley",
+      image: "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      price: "From ₹18,999",
+      rating: 4.9,
+      description: "Paradise on earth with stunning lakes and valleys"
     }
   ];
 
@@ -58,10 +58,10 @@ const Destinations = ({ onContactClick }: DestinationsProps) => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Featured Destinations
+            Discover Incredible India
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Handpicked destinations that promise unforgettable experiences
+            Explore the diverse beauty of India - from beaches to mountains, heritage to adventure
           </p>
         </div>
         

@@ -6,23 +6,23 @@ const Services = () => {
   const services = [
     {
       icon: Plane,
-      title: "Flight Bookings",
-      description: "Best deals on domestic and international flights with 24/7 support"
+      title: "Domestic Flight Bookings",
+      description: "Best deals on flights across India with seamless booking and 24/7 support"
     },
     {
       icon: MapPin,
-      title: "Custom Itineraries", 
-      description: "Personalized travel plans tailored to your preferences and budget"
+      title: "Custom India Tours", 
+      description: "Personalized itineraries showcasing India's diverse culture, heritage, and landscapes"
     },
     {
       icon: Camera,
-      title: "Guided Tours",
-      description: "Expert local guides to show you hidden gems and cultural experiences"
+      title: "Local Expert Guides",
+      description: "Experienced local guides to show you authentic India beyond tourist spots"
     },
     {
       icon: Shield,
-      title: "Travel Insurance",
-      description: "Comprehensive coverage to protect your journey and peace of mind"
+      title: "Travel Safety & Support",
+      description: "Comprehensive travel insurance and round-the-clock assistance throughout India"
     }
   ];
 
@@ -31,10 +31,10 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Our Services
+            Why Choose Us for Indian Travel
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Everything you need for the perfect trip, all in one place
+            Your trusted partner for exploring India's incredible diversity and rich heritage
           </p>
         </div>
         

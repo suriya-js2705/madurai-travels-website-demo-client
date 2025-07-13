@@ -13,24 +13,24 @@ const Hero = ({ onContactClick }: HeroProps) => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+          backgroundImage: "url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
         }}
       ></div>
       
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         <div className="flex items-center justify-center mb-6 animate-fade-in">
           <MapPin className="h-8 w-8 mr-2 text-teal-400" />
-          <span className="text-teal-400 font-semibold text-lg tracking-wide">DISCOVER THE WORLD</span>
+          <span className="text-teal-400 font-semibold text-lg tracking-wide">EXPLORE INCREDIBLE INDIA</span>
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
-          Your Journey
-          <span className="block text-teal-400">Starts Here</span>
+          Discover India's
+          <span className="block text-teal-400">Hidden Gems</span>
         </h1>
         
         <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto animate-fade-in">
-          Create unforgettable memories with our expertly crafted travel experiences. 
-          From exotic destinations to local hidden gems.
+          From the backwaters of Kerala to the deserts of Rajasthan, experience the incredible 
+          diversity and beauty of India with our expertly crafted local tours.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
@@ -39,7 +39,7 @@ const Hero = ({ onContactClick }: HeroProps) => {
             className="bg-teal-500 hover:bg-teal-600 text-white px-8 py-3 text-lg font-semibold transition-all duration-300 hover:scale-105"
             onClick={onContactClick}
           >
-            Plan Your Trip
+            Plan Your Indian Adventure
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
           <Button 
