@@ -3,6 +3,8 @@ import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
+import CarTariffs from "@/components/CarTariffs";
+import TourPackages from "@/components/TourPackages";
 import Destinations from "@/components/Destinations";
 import Testimonials from "@/components/Testimonials";
 import ContactSection from "@/components/ContactSection";
@@ -21,6 +23,8 @@ const Index = () => {
       <Navigation onContactClick={handleContactClick} />
       <Hero onContactClick={handleContactClick} />
       <Services />
+      <CarTariffs />
+      <TourPackages onContactClick={handleContactClick} />
       <Destinations onContactClick={handleContactClick} />
       <Testimonials />
       <ContactSection />
