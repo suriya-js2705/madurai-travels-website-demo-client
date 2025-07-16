@@ -1,4 +1,5 @@
 
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Car, Users, Clock, Phone } from "lucide-react";
@@ -19,7 +20,7 @@ const CarTariffs = () => {
     {
       name: "Sedan",
       subtitle: "(Day Rent)",
-      image: "https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1549399265-f8d6e96da83c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       description: "We give our best cabs on rent to customers at an affordable price.",
       rent: "₹1600/-",
       perKm: "",
@@ -31,7 +32,7 @@ const CarTariffs = () => {
     {
       name: "SUV",
       subtitle: "(Day Rent)",
-      image: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1594736797933-d0401ba6fe65?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       description: "We give our best cabs on rent to customers at an affordable price.",
       rent: "₹2200/-",
       perKm: "",
@@ -43,7 +44,7 @@ const CarTariffs = () => {
     {
       name: "Innova Crysta",
       subtitle: "(Day Rent)",
-      image: "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1604780252198-86c6495fc473?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       description: "We give our best cabs on rent to customers at an affordable price.",
       rent: "₹2200/-",
       perKm: "",
@@ -55,7 +56,7 @@ const CarTariffs = () => {
     {
       name: "Tempo Traveller",
       subtitle: "(Day Rent)",
-      image: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       description: "We give our best cabs on rent to customers at an affordable price.",
       rent: "₹2700/-",
       perKm: "(Rs. 17/km)",
@@ -141,3 +142,4 @@ const CarTariffs = () => {
 };
 
 export default CarTariffs;
+
