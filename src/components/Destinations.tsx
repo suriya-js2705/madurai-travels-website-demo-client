@@ -8,6 +8,17 @@ interface DestinationsProps {
 }
 
 const Destinations = ({ onContactClick }: DestinationsProps) => {
+  const phoneNumber = "+918123456789"; // Replace with your actual phone number
+  const whatsappNumber = "+918123456789"; // Replace with your actual WhatsApp number
+  
+  const handleCallNow = () => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
+  const handleWhatsApp = () => {
+    const message = encodeURIComponent("Hi, I need a taxi for instant pickup in Madurai");
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+  };
   const packages = [
     {
       name: "Meenakshi Temple Tour",
@@ -132,7 +143,7 @@ const Destinations = ({ onContactClick }: DestinationsProps) => {
               <Button 
                 size="lg"
                 className="bg-orange-500 hover:bg-orange-600 text-white"
-                onClick={onContactClick}
+                onClick={handleCallNow}
               >
                 Call for Instant Pickup
               </Button>
@@ -140,7 +151,7 @@ const Destinations = ({ onContactClick }: DestinationsProps) => {
                 size="lg"
                 variant="outline"
                 className="border-orange-500 text-orange-600 hover:bg-orange-50"
-                onClick={onContactClick}
+                onClick={handleWhatsApp}
               >
                 WhatsApp Us Now
               </Button>
