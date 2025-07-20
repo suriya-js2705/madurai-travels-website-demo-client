@@ -5,6 +5,12 @@ import { Button } from "@/components/ui/button";
 import { Car, Users, Clock, Phone } from "lucide-react";
 
 const CarTariffs = () => {
+  const phoneNumber = "+918123456789"; // Replace with your actual phone number
+  
+  const handleCallNow = () => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
   const carTariffs = [
     {
       name: "Mini",
@@ -123,6 +129,7 @@ const CarTariffs = () => {
                 </div>
                 
                 <Button 
+                  onClick={handleCallNow}
                   className={`w-full ${
                     car.isHighlighted 
                       ? 'bg-orange-500 hover:bg-orange-600' 
