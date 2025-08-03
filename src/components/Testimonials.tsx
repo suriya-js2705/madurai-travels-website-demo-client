@@ -5,24 +5,24 @@ import { Star, Quote } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      location: "New York, USA", 
+      name: "Priya S",
+      location: "Chennai, India", 
       rating: 5,
-      text: "Absolutely incredible experience! The team planned every detail perfectly. Our honeymoon in Santorini was magical thanks to their expertise.",
+      text: "Our trip was perfectly planned and executed. Our guide was knowledgeable, and we felt completely taken care of. A truly memorable experience!",
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
     },
     {
-      name: "Michael Chen",
-      location: "Toronto, Canada",
+      name: "The Sharma Family",
+      location: "Delhi, India",
       rating: 5, 
-      text: "Professional service from start to finish. They handled all the logistics while we enjoyed an amazing family vacation in Japan. Highly recommended!",
+      text: "From the moment we landed, every detail was handled with care. The sightseeing tour of Meenakshi Temple and the local food tour were the highlights of our trip. Our guide, Murugan, was incredibly insightful and passionate about his city. We left with not just photographs, but with a deep appreciation for Madurai's rich culture. Thank you for an unforgettable adventure!",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
     },
     {
-      name: "Emma Rodriguez",
-      location: "Madrid, Spain",
+      name: "Anjali R",
+      location: "Mumbai, India",
       rating: 5,
-      text: "The custom itinerary they created exceeded all expectations. Every destination was perfectly chosen and the local guides were fantastic!",
+      text: "I've used several travel agencies before, but the customer service here is on another level. They were always available to answer my questions and made me feel confident about my booking. The entire process, from inquiry to the end of our trip, was smooth and enjoyable.",
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
     }
   ];

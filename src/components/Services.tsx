@@ -7,22 +7,22 @@ const Services = () => {
     {
       icon: Train,
       title: "Railway Station Pickup",
-      description: "Instant pickup from Madurai Junction with comfortable AC vehicles for your local tours"
+      description: "Seamless pick-up at Madurai Junction with comfortable, AC vehicles for an easy start to your local tour."
     },
     {
       icon: Car,
       title: "Car Rental Services", 
-      description: "Self-drive and chauffeur-driven cars available hourly, daily, or multi-day rentals"
+      description: "Flexible, city-wide cab rentals—book by the hour and kilometer. Pay for the ride, plus driver waiting time, as you explore Madurai's top attractions at your own pace."
     },
     {
       icon: MapPin,
       title: "Local Tour Packages",
-      description: "Curated Madurai sightseeing packages covering temples, palaces, and cultural sites"
+      description: "Explore Madurai’s iconic temples, palaces, and cultural gems with our expertly curated sightseeing packages, designed for every traveler."
     },
     {
       icon: Clock,
       title: "24/7 Travel Support",
-      description: "Round-the-clock assistance for travelers arriving at any time from station or airport"
+      description: "We’re here whenever you need us! Round-the-clock assistance for smooth arrivals and departures from the station or airport, ensuring a hassle-free experience."
     }
   ];
 

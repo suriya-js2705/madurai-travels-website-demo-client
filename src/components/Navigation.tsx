@@ -23,7 +23,7 @@ const Navigation = ({ onContactClick }: NavigationProps) => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <MapPin className="h-8 w-8 text-teal-500" />
-            <span className="text-xl font-bold text-gray-900">TravelCo</span>
+            <span className="text-xl font-bold text-gray-900">Madurai Modern Travels</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -35,10 +35,11 @@ const Navigation = ({ onContactClick }: NavigationProps) => {
               Home
             </button>
             <button 
-              onClick={() => scrollToSection('destinations')}
+            
+              onClick={() => scrollToSection('tourpackages')}
               className="text-gray-700 hover:text-teal-500 transition-colors"
             >
-              Destinations
+              Tour Packages
             </button>
             <button 
               onClick={() => scrollToSection('services')}
@@ -75,10 +76,10 @@ const Navigation = ({ onContactClick }: NavigationProps) => {
                 Home
               </button>
               <button 
-                onClick={() => scrollToSection('destinations')}
+                onClick={() => scrollToSection('tourpackages')}
                 className="block px-3 py-2 text-gray-700 hover:text-teal-500 transition-colors w-full text-left"
               >
-                Destinations
+                Tour Packages
               </button>
               <button 
                 onClick={() => scrollToSection('services')}

@@ -20,7 +20,7 @@ const Hero = ({ onContactClick }: HeroProps) => {
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         <div className="flex items-center justify-center mb-6 animate-fade-in">
           <MapPin className="h-8 w-8 mr-2 text-orange-400" />
-          <span className="text-orange-400 font-semibold text-lg tracking-wide">MADURAI LOCAL TRAVELS</span>
+          <span className="text-orange-400 font-semibold text-lg tracking-wide">MADURAI MODERN TRAVELS</span>
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
@@ -52,7 +52,7 @@ const Hero = ({ onContactClick }: HeroProps) => {
           </Button>
         </div>
         
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
+        <div className="mt-12 grid grid-cols-3 md:grid-cols-5 gap-6 text-sm">
           <div className="text-center">
             <div className="text-2xl font-bold text-orange-400">50+</div>
             <div>Tour Packages</div>
@@ -68,6 +68,11 @@ const Hero = ({ onContactClick }: HeroProps) => {
           <div className="text-center">
             <div className="text-2xl font-bold text-orange-400">Local</div>
             <div>Expert Guides</div>
+          </div>
+
+           <div className="text-center">
+            <div className="text-2xl font-bold text-orange-400">500+</div>
+            <div>Positive reviews</div>
           </div>
         </div>
       </div>
